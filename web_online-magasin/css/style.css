@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+
+/*************************************************************************************************************
+Styling af header/nav starter
+*************************************************************************************************************/
+
+/* styling af header og navigation starter */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #6ca4bc;
+    text-align: center;
+    height: 150px;
+    z-index: 2;
+}
+
+.logo {
+    width: 270px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.hoved-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.venstre-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hojre-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* drop down til punktet kreativ univers */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+}
+
+.dropdown .dropbtn:hover{
+    color: #c4dae4;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #6ca4bc;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* drop sown slutter */
+
+ul li a{
+    color: black;
+    font-size: 20px;
+}
+
+/* kode til fremhævning af punkterne i nav */
+.hoved-menu ul li a:hover{
+    color: #c4dae4;
+    text-decoration: none;
+    opacity: 0.9;
+}
+/* styling af header og navigation slutter */
+
+
+/*************************************************************************************************************
+Styling af footer starter
+*************************************************************************************************************/
+
+/* styling af footer starter */
+footer{
+    /* 3 første punkter gør at footer er i bunden */
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    /* næste punkter er udseende på footer */
+    background-color: #6ca4bc;
+    height: 100px;
+}
+
+ .footer-punkter{
+    display: inline-block;
+    height: 40px;
+    padding: 30px;
+    width: 33%;
+}  
+
+/* skifter farve på teksten i footer */
+.footer-punkter li a:hover{
+    color: #c4dae4;
+    text-decoration: none;
+    opacity: 0.5; 
+}
+
+/* styling af email tilmelding */
+.but-1{
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+#email-felt{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+input[type="email"]{
+    width: 300px;
+    border: 2px solid black;
+    margin-right: -5px;
+}
+
+/* bestemmer hvor mailbox sidder på siden */
+.mailbox{
+    display: inline-block;
+    height: 40px;
+    padding: 30px;
+    width: 33%;
+}
+
+/* Logo til sociale medier */
+.social{
+    float: right;
+    /* height: 40px; */
+    padding: 40px 30px;
+}
+
+.asocial{
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    color: black;
+}
+
+.asocial:hover{
+    color: #c4dae4;
+    opacity: 0.9;
+}
+/* styling af footer slutter */
+
+
+/*************************************************************************************************************
+Styling af forside starter
+*************************************************************************************************************/
+
+/* styling af forside starter */
+/* billeder */
+.lampe{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 300px;
+}
+
+.maleri{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    margin-top: 320px;
+}
+
+/* streg på forsiden */
+#streg{
+    height: 15px;
+    width: 95%;
+    background-color: #6ca4bc;
+    margin: 0 auto;
+}
+
+/* sidste billeder på forside */
+.link{
+    display: inline;
+    margin: 3%;
+}
+
+.link img{
+    height: 100%;
+    width: 100%;
+}
+
+.billederf{
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px 50px;
+}
+
+/* tekst på siden */
+/* forstil det er en boks */
+.textforside{
+    position: relative;
+    /* top sider bund */
+    margin: 200px 100px 50px;
+    height: 800px;
+}
+
+.h1forside{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 50px 0 50px;
+}
+
+.pforside {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    width: 40%;
+    line-height: 38px;
+}
+
+.h2nyhed{
+    margin: 50px 100px 0;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* styling af forside slutter */
+
+/*************************************************************************************************************
+Styling af guides side starter
+*************************************************************************************************************/
+
+/* styling af guides side */
+.guidesside{
+    /* top sider bund */
+    margin: 200px 100px 50px;
+    height: 800px;  
+}
+
+.h1guides{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 50px 0 50px;
+}
+
+.linkguide img{
+    height: 100%;
+    width: 100%;
+}
+
+.linkguide{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+   margin: 0;
+   margin-right: 15px;
+}
+/* styling af guide side slut */
+
+
+/*************************************************************************************************************
+Styling af trin for trin (artikel 2) starter
+*************************************************************************************************************/
+
+/* styling af trin for trin guide side starter */
+/* øverste "boks" på siden */
+.flaske{
+    position: relative;
+    /* top sider bund */
+    margin: 200px 200px 50px;
+    height: 150px; 
+}
+
+.h1flakse{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin: 50px 0;
+}
+
+/* p teksten */
+.tekstflaske{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height:30px;
+}
+
+/* billeder */
+.trin1-4 img{
+    /* gør når de skal være på linje med hinanden, inline-block når det er billeder  */
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin: 3%;
+}
+
+.trin1-4{
+    /* indsat størrelsen på mine sider (forstil boks) */
+    margin: 50px 100px;
+    padding-left: 80px;
+}
+/* styling at trin for trin guide side slutter */
+
+
+/*************************************************************************************************************
+Styling af sundhed og hobby (artikel 1) starter
+*************************************************************************************************************/
+
+/* styling af artikel 1, sundhed og hobby starter */
+.sundhed{
+    position: relative;
+    /* top sider bund */
+    margin: 200px 200px 50px;
+    height: 1400px;
+}
+
+.sundhedbilled{
+    width: 40%;
+    height: auto;
+    float: right;
+    /* brug margin right hvis det skal længere ind */
+    margin: 0 0 40px 50px;
+}
+
+.psundhed{
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+.h1sundhed{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+/* styling af artikel 1, sundhed og hobby starter */
+
+
+/*************************************************************************************************************
+Styling af kreativ boligindretning (artikel 3) starter
+*************************************************************************************************************/
+
+/* styling af artikel 3, kreativ boligindretning */
+.boligind{
+    position: relative;
+    /* top sider bund (dette afgøre pladseringen af "boksen" på siden)*/
+    margin: 200px 200px 50px;
+    height: 1100px;
+}
+
+.billedebolig{
+    width: 40%;
+    height: auto;
+    float: right;
+    /* brug margin right hvis det skal længere ind */
+    margin: 0 0 40px 50px;
+}
+
+.h1boligind{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px; 
+}
+
+.pboligind{
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+
+
